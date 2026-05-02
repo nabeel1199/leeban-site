@@ -4,9 +4,27 @@ const tags = ["Social Feed", "Marketplace", "Loops", "Chat", "Tea Posts", "Premi
 
 const stats = [
   { value: "1", label: "App Launched" },
-  { value: "🎓", label: "Student-First" },
+  { value: "📱", label: "Mobile-First" },
   { value: "🇵🇰", label: "Built in Pakistan" },
-  { value: "⭐", label: "Premium Quality" },
+  { value: "🌍", label: "Built for Everyone" },
+]
+
+const values = [
+  {
+    icon: "🎯",
+    title: "Product-Led",
+    text: "We obsess over the product. Every detail — from interaction to performance — is intentional.",
+  },
+  {
+    icon: "⚡",
+    title: "Fast & Reliable",
+    text: "We ship quickly without cutting corners. Real-time features, clean architecture, stable apps.",
+  },
+  {
+    icon: "🌍",
+    title: "Built for Everyone",
+    text: "We design for global audiences. Our apps are inclusive, accessible, and built to scale.",
+  },
 ]
 
 export default function Home() {
@@ -14,20 +32,28 @@ export default function Home() {
     <main>
       {/* ── Hero ── */}
       <section className="relative overflow-hidden bg-gradient-to-br from-[#FF6B35] via-[#E8384D] via-[#C4247E] to-[#7B2D8B]">
-        <div className="absolute inset-0 opacity-10"
-          style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "32px 32px" }}
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+            backgroundSize: "32px 32px",
+          }}
         />
         <div className="relative mx-auto max-w-5xl px-6 py-32 text-center">
-          <div className="mx-auto mb-8 w-24 h-24 rounded-full bg-white/20 backdrop-blur ring-4 ring-white/30 flex items-center justify-center shadow-2xl">
-            <span className="text-4xl font-black text-white">L</span>
-          </div>
+          <img
+            src="/logo.png"
+            alt="Leeban Soft.Dev."
+            className="mx-auto mb-8 w-24 h-24 rounded-full object-cover shadow-2xl ring-4 ring-white/30"
+          />
 
           <h1 className="text-5xl font-black leading-tight text-white md:text-7xl">
-            Building the Future<br />of Student Technology
+            We Build Apps<br />People Love
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-xl leading-8 text-white/80">
-            We craft beautifully designed mobile applications that connect and empower university students worldwide.
+            Leeban Soft.Dev. is a software development company crafting beautifully
+            designed, high-performance mobile applications for everyone.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -47,16 +73,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── What We Do ── */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-black text-[#3D1F5C] md:text-5xl">What We Do</h2>
+            <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
+              We design and develop mobile applications from concept to launch — with a focus on
+              clean UX, real-time features, and products that genuinely improve people&apos;s lives.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {values.map((v) => (
+              <div
+                key={v.title}
+                className="rounded-2xl border border-gray-100 bg-[#FAFAFA] p-8 hover:shadow-md transition-shadow"
+              >
+                <div className="text-3xl mb-4">{v.icon}</div>
+                <h3 className="text-lg font-bold text-[#3D1F5C]">{v.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-gray-600">{v.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Products ── */}
-      <section id="products" className="bg-white">
+      <section id="products" className="bg-[#FAFAFA]">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-black text-[#3D1F5C] md:text-5xl">Our Products</h2>
-            <p className="mt-4 text-lg text-gray-500">Apps built for the real world, designed for students.</p>
+            <p className="mt-4 text-lg text-gray-500">
+              Apps we&apos;ve shipped — with more on the way.
+            </p>
           </div>
 
           <div className="mx-auto max-w-2xl">
-            <div className="rounded-3xl border border-gray-100 bg-white p-10 shadow-xl shadow-[#C4247E]/10 hover:shadow-2xl hover:shadow-[#C4247E]/15 transition-shadow">
+            <div className="rounded-3xl border border-gray-200 bg-white p-10 shadow-xl shadow-[#C4247E]/10 hover:shadow-2xl hover:shadow-[#C4247E]/15 transition-shadow">
               <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
                 <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white text-3xl font-black shadow-lg shrink-0">
                   M
@@ -65,7 +119,7 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-3 mb-1">
                     <h3 className="text-2xl font-black text-[#3D1F5C]">MyUniLoop</h3>
-                    <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-700">
+                    <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-700">
                       In Development
                     </span>
                   </div>
@@ -104,33 +158,33 @@ export default function Home() {
                     >
                       App Store
                     </a>
-                    <a
-                      href="#"
-                      className="rounded-xl border border-gray-200 px-5 py-3 text-sm font-semibold text-gray-600 hover:bg-gray-50 transition-colors"
-                    >
-                      Google Play
-                    </a>
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* More coming */}
+            <div className="mt-6 rounded-2xl border border-dashed border-gray-200 bg-white p-8 text-center">
+              <p className="text-gray-400 font-medium">More apps coming soon</p>
+              <p className="text-sm text-gray-300 mt-1">We&apos;re always building something new.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── About ── */}
-      <section className="bg-[#FAFAFA]">
+      <section className="bg-white">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="grid gap-16 md:grid-cols-2 md:items-center">
             <div>
               <h2 className="text-4xl font-black text-[#3D1F5C] md:text-5xl">Who We Are</h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Leeban Soft.Dev. (SMC-Private) Limited is a software development company dedicated to
-                building world-class mobile applications for the student community.
+                Leeban Soft.Dev. (SMC-Private) Limited is a software development company that
+                builds high-quality mobile applications for a wide range of users and industries.
               </p>
               <p className="mt-4 text-lg leading-8 text-gray-600">
-                Founded with a vision to connect university students through technology, we design and
-                develop apps that solve real problems students face every day.
+                We started with the student space and we&apos;re expanding — every app we ship is
+                crafted with the same attention to detail, performance, and design.
               </p>
               <Link
                 href="/about"
@@ -144,7 +198,7 @@ export default function Home() {
               {stats.map((s) => (
                 <div
                   key={s.label}
-                  className="rounded-2xl bg-white p-6 text-center shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                  className="rounded-2xl bg-[#FAFAFA] p-6 text-center shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
                 >
                   <p className="text-3xl font-black text-[#C4247E]">{s.value}</p>
                   <p className="mt-2 text-sm font-semibold text-gray-600">{s.label}</p>
@@ -162,7 +216,7 @@ export default function Home() {
             Let&apos;s Work Together
           </h2>
           <p className="mt-4 text-lg text-white/80">
-            Have a project in mind or want to learn more about what we do?
+            Have a project in mind or want to learn more about what we build?
           </p>
           <Link
             href="/contact"

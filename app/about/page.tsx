@@ -6,7 +6,9 @@ export default function About() {
       <section className="bg-gradient-to-br from-[#FF6B35] via-[#C4247E] to-[#7B2D8B]">
         <div className="mx-auto max-w-4xl px-6 py-24 text-center">
           <h1 className="text-5xl font-black text-white md:text-6xl">About Us</h1>
-          <p className="mt-4 text-xl text-white/80">Who we are and what drives us.</p>
+          <p className="mt-4 text-xl text-white/80">
+            A software company built on craft, speed, and ambition.
+          </p>
         </div>
       </section>
 
@@ -14,37 +16,45 @@ export default function About() {
         <div className="mx-auto max-w-3xl px-6 py-20">
           <div className="space-y-6 text-lg leading-8 text-gray-600">
             <p>
-              <strong className="text-[#3D1F5C]">Leeban Soft.Dev. (SMC-Private) Limited</strong> is a
-              software development company dedicated to building world-class mobile applications for the
-              student community.
+              <strong className="text-[#3D1F5C]">Leeban Soft.Dev. (SMC-Private) Limited</strong> is
+              a software development company that designs and builds high-quality mobile applications
+              for a wide range of users and industries.
             </p>
             <p>
-              Founded with a vision to connect university students through technology, we design and develop
-              apps that solve real problems students face every day — from campus social interactions to
-              peer-to-peer marketplaces and group events.
-            </p>
-            <p>
-              Our flagship product,{" "}
+              We started with the student space — our first product,{" "}
               <a href="https://myuniloop.com" className="font-bold text-orange-500 hover:underline">
                 MyUniLoop
               </a>
-              , is a fully-featured student platform combining social networking, marketplace functionality,
-              location-based loops, and real-time chat in one seamless mobile experience.
+              , is a social and marketplace platform built for university students. But that&apos;s
+              just the beginning. We&apos;re building apps for everyone.
             </p>
             <p>
-              We are committed to clean design, strong performance, and user experiences that feel native
-              and intuitive — especially on mobile. Every product we build starts with the student
-              in mind.
+              Every product we ship reflects the same standards: clean design, strong performance,
+              intuitive UX, and real-world utility. We don&apos;t build for the sake of building —
+              we build things people actually want to use.
+            </p>
+            <p>
+              We&apos;re based in Pakistan and building for the world.
             </p>
           </div>
 
           <div className="mt-12 rounded-2xl bg-gradient-to-r from-[#FF6B35] via-[#C4247E] to-[#7B2D8B] p-px">
             <div className="rounded-2xl bg-white p-8">
-              <p className="text-sm font-bold uppercase tracking-widest text-[#C4247E]">Company Details</p>
+              <p className="text-sm font-bold uppercase tracking-widest text-[#C4247E]">
+                Company Details
+              </p>
               <div className="mt-4 space-y-2 text-gray-600">
-                <p><strong className="text-[#3D1F5C]">Legal Name:</strong> Leeban Soft.Dev. (SMC-Private) Limited</p>
-                <p><strong className="text-[#3D1F5C]">Country:</strong> Pakistan</p>
-                <p><strong className="text-[#3D1F5C]">Focus:</strong> Student mobile applications</p>
+                <p>
+                  <strong className="text-[#3D1F5C]">Legal Name:</strong> Leeban Soft.Dev.
+                  (SMC-Private) Limited
+                </p>
+                <p>
+                  <strong className="text-[#3D1F5C]">Industry:</strong> Software Development &
+                  Mobile Applications
+                </p>
+                <p>
+                  <strong className="text-[#3D1F5C]">Country:</strong> Pakistan
+                </p>
               </div>
             </div>
           </div>

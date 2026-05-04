@@ -41,11 +41,13 @@ export default function Home() {
           }}
         />
         <div className="relative mx-auto max-w-5xl px-6 py-32 text-center">
-          <img
-            src="/logo.png"
-            alt="Leeban Soft.Dev."
-            className="mx-auto mb-8 w-24 h-24 rounded-full object-cover shadow-2xl ring-4 ring-white/30"
-          />
+          <div className="mx-auto mb-8 w-24 h-24 rounded-full bg-white shadow-2xl ring-4 ring-white/30 overflow-hidden flex items-center justify-center">
+            <img
+              src="/logo.png"
+              alt="Leeban Soft.Dev."
+              className="w-full h-full object-contain"
+            />
+          </div>
 
           <h1 className="text-5xl font-black leading-tight text-white md:text-7xl">
             We Build Apps<br />People Love

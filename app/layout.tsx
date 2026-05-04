@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: "Leeban Soft.Dev. — Student Technology",
   description:
     "Leeban Soft.Dev. (SMC-Private) Limited builds world-class mobile apps for university students worldwide.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

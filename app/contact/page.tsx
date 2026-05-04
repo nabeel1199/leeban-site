@@ -15,10 +15,10 @@ export default function Contact() {
           </p>
 
           <a
-            href="mailto:hello@leeban.co"
+            href="mailto:info@leeban.co"
             className="mt-6 inline-block text-2xl font-bold text-[#C4247E] hover:text-[#7B2D8B] transition-colors"
           >
-            hello@leeban.co
+            info@leeban.co
           </a>
 
           <div className="mt-12 rounded-2xl border border-gray-100 bg-[#FAFAFA] p-8 text-left space-y-4">

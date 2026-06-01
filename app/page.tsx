@@ -4,7 +4,7 @@ const tags = ["Social Feed", "Marketplace", "Loops", "Chat", "Tea Posts", "Premi
 
 const stats = [
   { value: "1", label: "App Launched" },
-  { value: "📱", label: "Mobile-First" },
+  { value: "iOS + Android", label: "Platforms" },
   { value: "🇵🇰", label: "Built in Pakistan" },
   { value: "🌍", label: "Built for Everyone" },
 ]
@@ -121,8 +121,8 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-3 mb-1">
                     <h3 className="text-2xl font-black text-[#3D1F5C]">MyUniLoop</h3>
-                    <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-700">
-                      In Development
+                    <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-700">
+                      Live on iOS &amp; Android
                     </span>
                   </div>
 
@@ -156,9 +156,15 @@ export default function Home() {
                     </a>
                     <a
                       href="#"
-                      className="rounded-xl border border-gray-200 px-5 py-3 text-sm font-semibold text-gray-600 hover:bg-gray-50 transition-colors"
+                      className="flex items-center gap-2 rounded-xl border border-gray-200 px-5 py-3 text-sm font-semibold text-gray-600 hover:bg-gray-50 transition-colors"
                     >
-                      App Store
+                      <span>🍎</span> App Store
+                    </a>
+                    <a
+                      href="#"
+                      className="flex items-center gap-2 rounded-xl border border-gray-200 px-5 py-3 text-sm font-semibold text-gray-600 hover:bg-gray-50 transition-colors"
+                    >
+                      <span>🤖</span> Google Play
                     </a>
                   </div>
                 </div>
